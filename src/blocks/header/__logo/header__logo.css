@@ -1,9 +1,4 @@
-
-
-@media all and (max-width: 550px) {
-    .header__logo{
-        width: 117px;
-        height: 24px;
-        z-index: 9999;
-    }
+.header__logo{
+  height: 24px;
+  z-index: 9999;
 }

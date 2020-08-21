@@ -38,3 +38,7 @@
   font-weight: normal;
   src: url(./fonts/sourcesanspro-regular.woff) format("woff");
 }
+
+body {
+  font-family: 'Roboto', 'Roboto Slab', 'Inter', 'Arial', sans-serif;
+}

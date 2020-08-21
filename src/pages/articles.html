@@ -21,7 +21,7 @@
                 <li class="menu__item"><a href="articles.html" class="menu__link menu__link_white-mode">Сохраненные статьи</a></li>
                 <li class="menu__item"><button class="button button_type_header-white">
                   <span class="button__text">Грета</span>
-                  <img class="button__image" src="<%=require('../images/icons/logout_black.svg').default%>" alt=""></button></li>
+                  <img class="button__image" src="<%=require('../images/icons/logout_black.svg').default%>" alt="logout"></button></li>
             </ul>
         </nav>
 
@@ -37,7 +37,6 @@
                 <li class="menu__item">
                   <button class="button button_type_header">
                     <span class="button__text">Авторизоваться</span>
-                    <img class="button__image" src="" alt="">
                   </button>
                 </li>
               </ul>
@@ -57,7 +56,7 @@
 
       <div class="articles__container">
         <div class="article">
-          <img src="<%=require('../images/cards/image_06.jpg').default%>" alt="" class="article__photo">
+          <img src="<%=require('../images/cards/image_06.jpg').default%>" alt="article picture" class="article__photo">
           <div class="article__content">
             <p class="article__date">2 августа, 2019</p>
             <h4 class="article__title">Национальное достояние – парки</h4>
@@ -67,12 +66,12 @@
             <p class="article__source">Лента.ру</p>
           </div>
           <div class="article__tag"><p class="article__tag-text">Природа</p></div>
-          <button class="button article__tooltip article__tooltip_disabled"><p class="article__tooltip-text ">Убрать из сохранённых</p></button>
+          <button class="button article__tooltip article__tooltip_disabled">Убрать из сохранённых</button>
           <button class="button article__bookmark article__trash-image"></button>
         </div>
 
         <div class="article">
-          <img src="<%=require('../images/cards/image_01.jpg').default%>" alt="" class="article__photo">
+          <img src="<%=require('../images/cards/image_01.jpg').default%>" alt="article picture" class="article__photo">
           <div class="article__content">
             <p class="article__date">2 августа, 2019</p>
             <h4 class="article__title">Лесные огоньки: история одной фотографии</h4>
@@ -81,12 +80,12 @@
             <p class="article__source">Медуза</p>
           </div>
           <div class="article__tag"><p class="article__tag-text">Природа</p></div>
-          <button class="button article__tooltip "><p class="article__tooltip-text ">Убрать из сохранённых</p></button>
+          <button class="button article__tooltip ">Убрать из сохранённых</button>
           <button class="button article__bookmark article__trash-image"></button>
         </div>
 
         <div class="article">
-          <img src="<%=require('../images/cards/image_05.jpg').default%>" alt="" class="article__photo">
+          <img src="<%=require('../images/cards/image_05.jpg').default%>" alt="article picture" class="article__photo">
           <div class="article__content">
             <p class="article__date">2 августа, 2019</p>
             <h4 class="article__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
@@ -94,12 +93,12 @@
             <p class="article__source">Риа</p>
           </div>
           <div class="article__tag"><p class="article__tag-text">Тайга</p></div>
-          <button class="button article__tooltip article__tooltip_disabled"><p class="article__tooltip-text ">Убрать из сохранённых</p></button>
+          <button class="button article__tooltip article__tooltip_disabled">Убрать из сохранённых</button>
           <button class="button article__bookmark article__trash-image"></button>
         </div>
 
         <div class="article">
-          <img src="<%=require('../images/cards/image_06.jpg').default%>" alt="" class="article__photo">
+          <img src="<%=require('../images/cards/image_06.jpg').default%>" alt="article picture" class="article__photo">
           <div class="article__content">
             <p class="article__date">2 августа, 2019</p>
             <h4 class="article__title">Лесные огоньки: история одной фотографии</h4>
@@ -108,12 +107,12 @@
             <p class="article__source">Медуза</p>
           </div>
           <div class="article__tag"><p class="article__tag-text">Парки</p></div>
-          <button class="button article__tooltip article__tooltip_disabled"><p class="article__tooltip-text ">Убрать из сохранённых</p></button>
+          <button class="button article__tooltip article__tooltip_disabled">>Убрать из сохранённых</button>
           <button class="button article__bookmark article__trash-image"></button>
         </div>
 
         <div class="article">
-          <img src="<%=require('../images/cards/image_01.jpg').default%>" alt="" class="article__photo">
+          <img src="<%=require('../images/cards/image_01.jpg').default%>" alt="article picture" class="article__photo">
           <div class="article__content">
             <p class="article__date">2 августа, 2019</p>
             <h4 class="article__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
@@ -121,9 +120,10 @@
             <p class="article__source">Риа</p>
           </div>
           <div class="article__tag"><p class="article__tag-text">Фотография</p></div>
-          <button class="button article__tooltip article__tooltip_disabled"><p class="article__tooltip-text ">Убрать из сохранённых</p></button>
+          <button class="button article__tooltip article__tooltip_disabled">Убрать из сохранённых</button>
           <button class="button article__bookmark article__trash-image"></button>
         </div>
+      </div>
   </section>
 
   <footer class="footer">
@@ -136,12 +136,12 @@
           <ul class="menu__list">
             <li class="menu__item">
               <a href="https://github.com/ShestakovaElena/" target="_blank" class="menu__link">
-                <img src="<%=require('../images/icons/github_icon.svg').default%>" alt="">
+                <img src="<%=require('../images/icons/github_icon.svg').default%>" alt="github icon">
               </a>
             </li>
             <li class="menu__item">
               <a href="https://www.facebook.com/elena.shestakova.7/" target="_blank" class="menu__link">
-                <img src="<%=require('../images/icons/fb_icon.svg').default%>" alt="">
+                <img src="<%=require('../images/icons/fb_icon.svg').default%>" alt="fb icon">
               </a>
             </li>
           </ul>

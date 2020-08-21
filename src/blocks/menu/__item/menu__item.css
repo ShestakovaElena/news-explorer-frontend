@@ -7,13 +7,14 @@
     margin: auto 32px auto 0;
 }
 .menu__item:last-child{
-    margin: auto;
+    margin: 0;
 }
 
 @media all and (max-width: 1000px) {
     .menu__item {
         font-size: 1rem;
         line-height: 150%;
+        margin: auto 16px auto 0;
     }
 }
 

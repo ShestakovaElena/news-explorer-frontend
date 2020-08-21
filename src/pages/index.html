@@ -26,7 +26,7 @@
                 <li class="menu__item">
                   <button class="button button_type_header">
                     <span class="button__text">Грета</span>
-                    <img class="button__image" src="<%=require('../images/icons/logout.svg').default%>" alt="">
+                    <img class="button__image" src="<%=require('../images/icons/logout.svg').default%>" alt="logout">
                   </button>
                 </li>
             </ul>
@@ -45,7 +45,6 @@
               <li class="menu__item">
                 <button class="button button_type_header">
                   <span class="button__text">Авторизоваться</span>
-                  <img class="button__image" src="" alt="">
                 </button>
               </li>
             </ul>
@@ -67,8 +66,9 @@
         <h3 class="section-title">Результаты поиска</h3>
 
         <div class="articles__container">
+
             <div class="article">
-                <img src="<%=require('../images/cards/image_08.jpg').default%>" alt="" class="article__photo">
+                <img src="<%=require('../images/cards/image_08.jpg').default%>" alt="article picture" class="article__photo">
                 <div class="article__content">
                     <p class="article__date">2 августа, 2019</p>
                     <h4 class="article__title">Национальное достояние – парки</h4>
@@ -77,12 +77,12 @@
                     где и сегодня каждый может приобщиться к природе.</p>
                     <p class="article__source">Лента.ру</p>
                 </div>
-                <button class="button article__tooltip article__tooltip_disabled"><p class="article__tooltip-text ">Войдите, чтобы сохранять статьи</p></button>
+                <button class="button article__tooltip">Войдите, чтобы сохранять статьи</button>
                 <button class="button article__bookmark article__bookmark-image"></button>
             </div>
 
             <div class="article">
-                <img src="<%=require('../images/cards/image_04.jpg').default%>" alt="" class="article__photo">
+                <img src="<%=require('../images/cards/image_04.jpg').default%>" alt="article picture" class="article__photo">
                 <div class="article__content">
                     <p class="article__date">2 августа, 2019</p>
                     <h4 class="article__title">Лесные огоньки: история одной фотографии</h4>
@@ -90,19 +90,19 @@
                         из местных чудес природы.</p>
                     <p class="article__source">Медуза</p>
             </div>
-            <button class="button article__tooltip article__tooltip_disabled"><p class="article__tooltip-text ">Войдите, чтобы сохранять статьи</p></button>
+            <button class="button article__tooltip ">Войдите, чтобы сохранять статьи</button>
             <button class="button article__bookmark article__bookmark-image"></button>
           </div>
 
           <div class="article">
-            <img src="<%=require('../images/cards/image_07.jpg').default%>" alt="" class="article__photo">
+            <img src="<%=require('../images/cards/image_07.jpg').default%>" alt="article picture" class="article__photo">
             <div class="article__content">
                 <p class="article__date">2 августа, 2019</p>
                 <h4 class="article__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
                 <p class="article__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
                 <p class="article__source">Риа</p>
             </div>
-            <button class="button article__tooltip "><p class="article__tooltip-text ">Войдите, чтобы сохранять статьи</p></button>
+            <button class="button article__tooltip ">Войдите, чтобы сохранять статьи</button>
             <button class="button article__bookmark article__bookmark-image"></button>
           </div>
         </div>
@@ -121,7 +121,7 @@
 
     </section>
     <section class="author root__section">
-        <div class="author__photo"><img class="author__photo-img" src="<%=require('../images/avatar/image-03.png').default%>" alt=""></div>
+        <div class="author__photo"><img class="author__photo-img" src="<%=require('../images/avatar/image-03.png').default%>" alt="author photo"></div>
         <div class="author__about">
             <h3 class="author__title">Об авторе</h3>
             <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете</p>
@@ -139,12 +139,12 @@
               <ul class="menu__list">
                 <li class="menu__item">
                   <a href="https://github.com/ShestakovaElena/" target="_blank" class="menu__link">
-                    <img src="<%=require('../images/icons/github_icon.svg').default%>" alt="">
+                    <img src="<%=require('../images/icons/github_icon.svg').default%>" alt="github icon">
                   </a>
                 </li>
                 <li class="menu__item">
                   <a href="https://www.facebook.com/elena.shestakova.7/" target="_blank" class="menu__link">
-                    <img src="<%=require('../images/icons/fb_icon.svg').default%>" alt="">
+                    <img src="<%=require('../images/icons/fb_icon.svg').default%>" alt="fb icon">
                   </a>
                 </li>
               </ul>
@@ -155,7 +155,7 @@
 
     <div class="popup popup_diabled">
       <div class="popup__content">
-        <img src="<%=require('../images/icons/back.svg').default%>" alt="" class="popup__close">
+        <img src="<%=require('../images/icons/back.svg').default%>" alt="close" class="popup__close">
         <h3 class="popup__title">Вход</h3>
         <form class="popup__form" name="edit" novalidate>
           <div class="popup__input-container">
@@ -176,7 +176,7 @@
 
     <div class="popup popup_diabled">
       <div class="popup__content">
-        <img src="<%=require('../images/icons/back.svg').default%>" alt="" class="popup__close">
+        <img src="<%=require('../images/icons/back.svg').default%>" alt="close" class="popup__close">
         <h3 class="popup__title">Регистрация</h3>
         <form class="popup__form" name="edit" novalidate>
           <div class="popup__input-container">
@@ -203,10 +203,9 @@
 
     <div class="popup popup_diabled">
       <div class="popup__content">
-        <img src="<%=require('../images/icons/back.svg').default%>" alt="" class="popup__close">
+        <img src="<%=require('../images/icons/back.svg').default%>" alt="close" class="popup__close">
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
         <a href="" class="popup__link_new-user">Выполнить вход</a>
-        </form>
       </div>
     </div>
 
