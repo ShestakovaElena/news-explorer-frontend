@@ -1,0 +1,25 @@
+.menu__item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 133%;
+    margin: auto 32px auto 0;
+}
+.menu__item:last-child{
+    margin: auto;
+}
+
+@media all and (max-width: 1000px) {
+    .menu__item {
+        font-size: 1rem;
+        line-height: 150%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .menu__item {
+        font-size: 1.125rem;
+        line-height: 311%;
+    }
+}

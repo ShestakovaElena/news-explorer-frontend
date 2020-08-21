@@ -1,0 +1,13 @@
+.popup__link{
+    color: #2F71E5;
+    text-decoration: none;
+}
+.popup__link_new-user{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2F71E5;
+    text-decoration: none;
+}

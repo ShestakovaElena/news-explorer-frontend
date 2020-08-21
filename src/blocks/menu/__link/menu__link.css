@@ -1,0 +1,35 @@
+.menu__link{
+    text-decoration:none;
+    color: #B6BCBF;
+}
+.menu__link:hover{
+    border-bottom: 3px solid #FFF;
+    color: #FFF;
+    padding-bottom: 25px; 
+}
+
+.menu__link:active{
+    border-bottom: 3px solid #FFF;
+    color: #FFF;
+    padding-bottom: 25px; 
+}
+
+.menu__link_white-mode{
+    color: #1A1B22;
+}
+
+.menu__link_white-mode:hover{
+    border-bottom: 3px solid #1A1B22;
+    color: #1A1B22;
+    padding-bottom: 25px; 
+}
+.menu__link_footer{
+    color: #1A1B22;
+}
+.menu__link_footer:visited{
+    color: #1A1B22;
+}
+
+@media all and (max-width: 1439px) {
+    
+}

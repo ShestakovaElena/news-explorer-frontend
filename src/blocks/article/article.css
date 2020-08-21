@@ -1,0 +1,25 @@
+@import url(./__bookmark/article__bookmark.css);
+@import url(./__content/article__content.css);
+@import url(./__date/article__date.css);
+@import url(./__photo/article__photo.css);
+@import url(./__source/article__source.css);
+@import url(./__tag/article__tag.css);
+@import url(./__tag-text/article__tag-text.css);
+@import url(./__text/article__text.css);
+@import url(./__title/article__title.css);
+@import url(./__tooltip-text/article__tooltip-text.css);
+@import url(./__tooltip/article__tooltip.css);
+
+
+
+.article{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.article_disabled{
+    display: none;
+}

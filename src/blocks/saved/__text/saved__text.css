@@ -1,0 +1,23 @@
+.saved__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 133%;
+    color: rgba(26, 27, 34, 0.5);
+    margin: 0 0 28px;
+}
+
+@media all and (max-width: 1000px) {
+    .saved__text{
+        font-size: 0.875rem;
+        line-height: 171%;
+        margin: 0 0 16px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .saved__text{
+        font-size: 0.75rem;
+    }
+}

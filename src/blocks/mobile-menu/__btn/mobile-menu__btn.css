@@ -1,0 +1,22 @@
+.mobile-menu__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: .4s;
+    z-index: 9999;
+    box-sizing: border-box;
+  }
+.mobile-menu__btn_dark-mode {
+  background: url(../../../images/icons/mobile-menu_white.svg) no-repeat center;
+}
+.mobile-menu__btn_white-mode {
+  background: url(../../../images/icons/mobile-menu_black.svg) no-repeat center;
+}
+  @media all and (min-width: 551px) {
+    .mobile-menu__btn{
+        display: none;
+    }
+}
