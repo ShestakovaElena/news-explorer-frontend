@@ -3,8 +3,11 @@
 @import url(./__title/no-results__title.css);
 
 .no-results{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.no-results_active{
+  display: flex;
 }

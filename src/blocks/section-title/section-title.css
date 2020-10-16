@@ -6,6 +6,7 @@
     color: #1A1B22;
     max-width: 500px;
     margin: 0;
+    display: none;
 }
 
 @media all and (max-width: 1439px) {

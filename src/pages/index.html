@@ -22,12 +22,10 @@
             <div class="menu__container">
             <ul class="menu__list">
                 <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
-                <li class="menu__item"><a href="articles.html" class="menu__link">Сохраненные статьи</a></li>
+                <li class="menu__item"><a href="articles.html" class="menu__link menu__link_articles">Сохраненные статьи</a></li>
                 <li class="menu__item">
-                  <button class="button button_type_header">
-                    <span class="button__text">Грета</span>
-                    <img class="button__image" src="<%=require('../images/icons/logout.svg').default%>" alt="logout">
-                  </button>
+                  <button class="button button_type_header button-login">Авторизоваться</button>
+                  <button class="button button_type_header button-logout" style='display: none'>Name</button>
                 </li>
             </ul>
           </div>
@@ -37,37 +35,41 @@
         <img src="<%=require('../images/icons/NewsExplorer.svg').default%>" alt="logo" class="header__logo">
         <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
         <label for="checkbox" class="mobile-menu__btn mobile-menu__btn_dark-mode"></label>
-          <div class="mobile-menu__overlay"></div>
-            <div class="mobile-menu__container">
-            <ul class="menu__list mobile-menu__list">
-              <li class="menu__item mobile-menu__item"><a href="index.html" class="menu__link mobile-menu__link">Главная</a></li>
-              <li class="menu__item mobile-menu__item"><a href="articles.html" class="menu__link mobile-menu__link">Сохраненные статьи</a></li>
-              <li class="menu__item">
-                <button class="button button_type_header">
-                  <span class="button__text">Авторизоваться</span>
-                </button>
-              </li>
-            </ul>
-          </div>
+        <div class="mobile-menu__overlay"></div>
+          <div class="mobile-menu__container">
+          <ul class="menu__list mobile-menu__list">
+            <li class="menu__item mobile-menu__item"><a href="index.html" class="menu__link mobile-menu__link">Главная</a></li>
+            <li class="menu__item mobile-menu__item"><a href="articles.html" class="menu__link mobile-menu__link mobile-menu__link_articles">Сохраненные статьи</a></li>
+            <li class="menu__item mobile-menu__item">
+              <button class="button button_type_header button_mobile-menu-login">Авторизоваться</button>
+              <button class="button button_type_header button_mobile-menu-logout" style='display: none'>Name</button>
+            </li>
+          </ul>
+        </div>
         </nav>
 
         <div class="search root__section">
           <h2 class="search__title">Что в мире творится?</h2>
           <p class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-          <div class="search__item">
-              <input type="text" class="search__input">
-              <button class="button button_type_search">Искать</button>
+          <form class="search__form" name="search" novalidate>
+            <div class="search__item">
+              <input type="text" class="search__input" required minlength="2" maxlength="30" name="search" placeholder="Что вы хотите найти?">
+              <span class="search__error"></span>
+              <button type="submit" class="button button_type_search">Искать</button>
           </div>
+          </form>
+
         </div>
     </header>
 
 
     <section class="articles root__section">
-        <h3 class="section-title">Результаты поиска</h3>
 
+        <h3 class="section-title">Результаты поиска</h3>
         <div class="articles__container">
 
-            <div class="article">
+            <!--<div class="article">
+              <a href="" target="_blank">
                 <img src="<%=require('../images/cards/image_08.jpg').default%>" alt="article picture" class="article__photo">
                 <div class="article__content">
                     <p class="article__date">2 августа, 2019</p>
@@ -77,44 +79,36 @@
                     где и сегодня каждый может приобщиться к природе.</p>
                     <p class="article__source">Лента.ру</p>
                 </div>
-                <button class="button article__tooltip">Войдите, чтобы сохранять статьи</button>
-                <button class="button article__bookmark article__bookmark-image"></button>
+              </a>
+              <button class="button article__tooltip">Войдите, чтобы сохранять статьи</button>
+              <button class="button article__bookmark article__bookmark-image"></button>
+
+
             </div>
 
-            <div class="article">
-                <img src="<%=require('../images/cards/image_04.jpg').default%>" alt="article picture" class="article__photo">
-                <div class="article__content">
-                    <p class="article__date">2 августа, 2019</p>
-                    <h4 class="article__title">Лесные огоньки: история одной фотографии</h4>
-                    <p class="article__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                        из местных чудес природы.</p>
-                    <p class="article__source">Медуза</p>
-            </div>
-            <button class="button article__tooltip ">Войдите, чтобы сохранять статьи</button>
-            <button class="button article__bookmark article__bookmark-image"></button>
-          </div>
 
-          <div class="article">
-            <img src="<%=require('../images/cards/image_07.jpg').default%>" alt="article picture" class="article__photo">
-            <div class="article__content">
-                <p class="article__date">2 августа, 2019</p>
-                <h4 class="article__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
-                <p class="article__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-                <p class="article__source">Риа</p>
-            </div>
-            <button class="button article__tooltip ">Войдите, чтобы сохранять статьи</button>
-            <button class="button article__bookmark article__bookmark-image"></button>
-          </div>
+
+           -->
+
         </div>
         <button class="button button_type_articles">Показать еще</button>
+
+
         <div class="preloader root__section">
           <i class="preloader__circle"></i>
           <p class="preloader__text">Идет поиск новостей...</p>
         </div>
+
         <div class="no-results root__section">
           <img src="<%=require('../images/icons/not-found_v1.svg').default%>" alt="nothing is found" class="no-results__image">
           <h4 class="no-results__title">Ничего не найдено</h4>
           <p class="no-results__text">К сожалению по вашему запросу ничего не найдено.</p>
+
+        </div>
+
+        <div class="search-error root__section">
+          <h4 class="no-results__title">Во время запроса произошла ошибка</h4>
+          <p class="no-results__text">Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз</p>
 
         </div>
 
@@ -153,59 +147,62 @@
 
 
 
-    <div class="popup popup_diabled">
+    <div class="popup popup_signin">
       <div class="popup__content">
         <img src="<%=require('../images/icons/back.svg').default%>" alt="close" class="popup__close">
         <h3 class="popup__title">Вход</h3>
-        <form class="popup__form" name="edit" novalidate>
+        <form class="popup__form" name="signin" novalidate>
           <div class="popup__input-container">
             <span class="popup__input-name">Email</span>
-            <input type="text" required minlength="2" maxlength="30" name="editEmail" class="popup__input" placeholder="Введите почту">
-            <span class="popup__error">Неправильный формат email</span>
+            <input type="email" required minlength="2" maxlength="30" name="email" class="popup__input" placeholder="Введите почту">
+            <span class="popup__error"></span>
           </div>
           <div class="popup__input-container">
             <span class="popup__input-name">Пароль</span>
-            <input type="password" required minlength="2" maxlength="30" name="editPassword" class="popup__input" placeholder="Введите пароль">
+            <input type="password" required minlength="2" maxlength="30" name="password" class="popup__input" placeholder="Введите пароль">
             <span class="popup__error"></span>
           </div>
-            <button type="submit" class="button button_type_popup popup__button_save">Войти</button>
-            <span class="popup__text">или <a class="popup__link" href="">Зарегистрироваться</a></span>
-        </form>
+            <span class="popup__error popup__error_server"></span>
+            <button type="submit" class="button button_type_popup">Войти</button>
+          </form>
+            <span class="popup__text">или <button class="popup__link popup_btn_register" href="">Зарегистрироваться</button></span>
+
       </div>
     </div>
 
-    <div class="popup popup_diabled">
+    <div class="popup popup_register">
       <div class="popup__content">
         <img src="<%=require('../images/icons/back.svg').default%>" alt="close" class="popup__close">
         <h3 class="popup__title">Регистрация</h3>
-        <form class="popup__form" name="edit" novalidate>
+        <form class="popup__form" name="signup" novalidate>
           <div class="popup__input-container">
             <span class="popup__input-name">Email</span>
-            <input type="text" required minlength="2" maxlength="30" name="editEmail" class="popup__input" placeholder="Введите почту">
+            <input type="email" required minlength="2" maxlength="30" name="email" class="popup__input" placeholder="Введите почту">
             <span class="popup__error"></span>
           </div>
           <div class="popup__input-container">
             <span class="popup__input-name">Пароль</span>
-            <input type="password" required minlength="2" maxlength="30" name="editPassword" class="popup__input" placeholder="Введите пароль">
+            <input type="password" required minlength="2" maxlength="30" name="password" class="popup__input" placeholder="Введите пароль">
             <span class="popup__error"></span>
           </div>
           <div class="popup__input-container">
             <span class="popup__input-name">Имя</span>
-            <input type="text" required minlength="2" maxlength="30" name="editPassword" class="popup__input" placeholder="Введите своё имя">
+            <input type="text" required minlength="2" maxlength="30" name="name" class="popup__input" placeholder="Введите своё имя">
             <span class="popup__error"></span>
           </div>
-          <span class="popup__error popup__error_user-exist">Такой пользователь уже есть</span>
-          <button type="submit" class="button button_type_popup button_type_popup_disabled">Зарегистрироваться</button>
-          <p class="popup__text">или <a class="popup__link" href="">Войти</a></p>
+            <span class="popup__error popup__error_server"></span>
+            <button type="submit" class="button button_type_popup button_disabled">Зарегистрироваться</button>
         </form>
+          <p class="popup__text">или <button class="popup__link popup_btn_signin" href="">Войти</button></p>
+
       </div>
     </div>
 
-    <div class="popup popup_diabled">
+    <div class="popup popup_signed popup_is_active">
       <div class="popup__content">
         <img src="<%=require('../images/icons/back.svg').default%>" alt="close" class="popup__close">
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
-        <a href="" class="popup__link_new-user">Выполнить вход</a>
+        <button href="" class="popup__link_new-user popup_btn_success">Выполнить вход</button>
       </div>
     </div>
 
