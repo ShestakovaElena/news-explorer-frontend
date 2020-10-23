@@ -18,10 +18,11 @@
             <img src="<%=require('../images/icons/NewsExplorer_black.svg').default%>" alt="logo" class="logo">
             <ul class="menu__list">
                 <li class="menu__item"><a href="index.html" class="menu__link menu__link_white-mode">Главная</a></li>
-                <li class="menu__item"><a href="articles.html" class="menu__link menu__link_white-mode">Сохраненные статьи</a></li>
-                <li class="menu__item"><button class="button button_type_header-white">
-                  <span class="button__text">Грета</span>
-                  <img class="button__image" src="<%=require('../images/icons/logout_black.svg').default%>" alt="logout"></button></li>
+                <li class="menu__item"><a href="articles.html" class="menu__link menu__link_white-mode menu__link_articles">Сохраненные статьи</a></li>
+                <li class="menu__item">
+                  <button class="button button_type_header-white button-login">Авторизоваться</button>
+                  <button class="button button_type_header-white button-logout" style='display: none'>Name</button>
+                </li>
             </ul>
         </nav>
 
@@ -33,11 +34,10 @@
               <div class="mobile-menu__container">
               <ul class="menu__list mobile-menu__list">
                 <li class="menu__item mobile-menu__item"><a href="index.html" class="menu__link mobile-menu__link">Главная</a></li>
-                <li class="menu__item mobile-menu__item"><a href="articles.html" class="menu__link mobile-menu__link">Сохраненные статьи</a></li>
+                <li class="menu__item mobile-menu__item"><a href="articles.html" class="menu__link mobile-menu__link mobile-menu__link_articles">Сохраненные статьи</a></li>
                 <li class="menu__item">
-                  <button class="button button_type_header">
-                    <span class="button__text">Авторизоваться</span>
-                  </button>
+                  <button class="button button_type_header button_mobile-menu-login">Авторизоваться</button>
+                  <button class="button button_type_header button_mobile-menu-logout" style='display: none'>Name</button>
                 </li>
               </ul>
             </div>
@@ -46,83 +46,14 @@
         <div class="saved root__section">
           <p class="saved__text">Сохранённые статьи</p>
           <h2 class="section-title">Грета, у вас 5 сохранённых статей</h2>
-          <p class="saved__subtitle">По ключевым словам: <span class="saved__accent">Природа</span>, <span class="saved__accent">Тайга</span> и <span class="saved__accent">2 другим</span></p>
+          <p class="saved__subtitle">По ключевым словам: <span class="saved__accent"></span></p>
         </div>
     </header>
 
 
     <section class="articles root__section">
       <h3 class="section-title">Результаты поиска</h3>
-
       <div class="articles__container">
-        <div class="article">
-          <img src="<%=require('../images/cards/image_06.jpg').default%>" alt="article picture" class="article__photo">
-          <div class="article__content">
-            <p class="article__date">2 августа, 2019</p>
-            <h4 class="article__title">Национальное достояние – парки</h4>
-            <p class="article__text">В 2016 году Америка отмечала важный юбилей:
-            сто лет назад здесь начала складываться система национальных парков – охраняемых территорий,
-            где и сегодня каждый может приобщиться к природе.</p>
-            <p class="article__source">Лента.ру</p>
-          </div>
-          <div class="article__tag"><p class="article__tag-text">Природа</p></div>
-          <button class="button article__tooltip article__tooltip_disabled">Убрать из сохранённых</button>
-          <button class="button article__bookmark article__trash-image"></button>
-        </div>
-
-        <div class="article">
-          <img src="<%=require('../images/cards/image_01.jpg').default%>" alt="article picture" class="article__photo">
-          <div class="article__content">
-            <p class="article__date">2 августа, 2019</p>
-            <h4 class="article__title">Лесные огоньки: история одной фотографии</h4>
-            <p class="article__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                из местных чудес природы.</p>
-            <p class="article__source">Медуза</p>
-          </div>
-          <div class="article__tag"><p class="article__tag-text">Природа</p></div>
-          <button class="button article__tooltip ">Убрать из сохранённых</button>
-          <button class="button article__bookmark article__trash-image"></button>
-        </div>
-
-        <div class="article">
-          <img src="<%=require('../images/cards/image_05.jpg').default%>" alt="article picture" class="article__photo">
-          <div class="article__content">
-            <p class="article__date">2 августа, 2019</p>
-            <h4 class="article__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
-            <p class="article__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-            <p class="article__source">Риа</p>
-          </div>
-          <div class="article__tag"><p class="article__tag-text">Тайга</p></div>
-          <button class="button article__tooltip article__tooltip_disabled">Убрать из сохранённых</button>
-          <button class="button article__bookmark article__trash-image"></button>
-        </div>
-
-        <div class="article">
-          <img src="<%=require('../images/cards/image_06.jpg').default%>" alt="article picture" class="article__photo">
-          <div class="article__content">
-            <p class="article__date">2 августа, 2019</p>
-            <h4 class="article__title">Лесные огоньки: история одной фотографии</h4>
-            <p class="article__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                из местных чудес природы.</p>
-            <p class="article__source">Медуза</p>
-          </div>
-          <div class="article__tag"><p class="article__tag-text">Парки</p></div>
-          <button class="button article__tooltip article__tooltip_disabled">>Убрать из сохранённых</button>
-          <button class="button article__bookmark article__trash-image"></button>
-        </div>
-
-        <div class="article">
-          <img src="<%=require('../images/cards/image_01.jpg').default%>" alt="article picture" class="article__photo">
-          <div class="article__content">
-            <p class="article__date">2 августа, 2019</p>
-            <h4 class="article__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
-            <p class="article__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-            <p class="article__source">Риа</p>
-          </div>
-          <div class="article__tag"><p class="article__tag-text">Фотография</p></div>
-          <button class="button article__tooltip article__tooltip_disabled">Убрать из сохранённых</button>
-          <button class="button article__bookmark article__trash-image"></button>
-        </div>
       </div>
   </section>
 

@@ -7,6 +7,7 @@
 @import url(../blocks/button/button.css);
 @import url(../blocks/preloader/preloader.css);
 @import url(../blocks/no-results/no-results.css);
+@import url(../blocks/search-error/search-error.css);
 @import url(../blocks/author/author.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/article/article.css);
@@ -17,8 +18,8 @@
 @import url(../blocks/mobile-menu/mobile-menu.css);
 
 
-  
-  
+
+
 .root {
     max-width: 1440px;
     display: flex;
@@ -52,11 +53,10 @@
 
 
 
-  
 
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+

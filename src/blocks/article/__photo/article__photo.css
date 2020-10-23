@@ -3,4 +3,7 @@
     border-top-right-radius: 10px;
     width: 100%;
     height: auto;
+    max-width: 492px;
+    max-height: 272px;
+    object-fit: contain;
 }

@@ -4,9 +4,14 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
+}
+.popup__error_server{
+    margin: 0 auto 8px;
     color: #FF0000;
 }
-.popup__error_user-exist{
-    margin: 0 auto 8px;
+
+.popup__error_active{
+  color: #FF0000;
 }
+
 

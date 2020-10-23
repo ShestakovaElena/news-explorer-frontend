@@ -1,6 +1,11 @@
 .popup__link{
     color: #2F71E5;
     text-decoration: none;
+    padding: 0;
+    border: none;
+    font: inherit;
+    background-color: transparent;
+    cursor: pointer;
 }
 .popup__link_new-user{
     font-family: Inter;

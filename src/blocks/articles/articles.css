@@ -2,6 +2,10 @@
 
 .articles{
     background: #F5F6F7;
-    display: flex;
+    display: none;
     flex-direction: column;
+}
+
+.articles_active{
+  display: flex;
 }
