@@ -1,6 +1,6 @@
 const MAIN_API_PARAMETERS = {
   //baseUrl: `http://localhost:3000`,
-  baseUrl: `http://news-explorer24.tk`,
+  baseUrl: `https://api.news-explorer24.tk`,
   headers: {
     'Content-Type': 'application/json'
   }
