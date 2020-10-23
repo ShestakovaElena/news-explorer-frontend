@@ -1,0 +1,16 @@
+@import url(./__title/author__title.css);
+@import url(./__text/author__text.css);
+@import url(./__photo/author__photo.css);
+@import url(./__about/author__about.css);
+@import url(./__photo-img/author__photo-img.css);
+
+.author{
+    display: flex;
+}
+
+@media all and (max-width: 550px) {
+    .author{
+        flex-direction: column;
+    }
+    
+}

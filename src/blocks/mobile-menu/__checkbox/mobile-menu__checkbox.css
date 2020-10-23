@@ -1,0 +1,17 @@
+.mobile-menu__checkbox {
+    display: none;
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu {
+    opacity: 1;
+  }
+
+  .mobile-menu__checkbox:checked ~ .mobile-menu__container {
+    height: 286px;
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn {
+    background: transparent;
+    background: url(../../../images/icons/mobile-close.svg);
+  }
+.mobile-menu__checkbox:checked ~ .mobile-menu__overlay {
+    height: 100%;
+  }

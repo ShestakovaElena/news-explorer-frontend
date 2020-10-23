@@ -1,0 +1,25 @@
+.saved__subtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 133%;
+    color: #1A1B22;
+    margin: 30px 0 0;
+    
+}
+
+@media all and (max-width: 1000px) {
+    .saved__subtitle{
+        font-size: 0.8755rem;
+        line-height: 171%;
+        margin: 16px 0 0;
+        
+    }
+}
+@media all and (max-width: 550px) {
+    .saved__subtitle{
+        font-size: 1.125rem;
+        line-height: 133%;
+    }
+}

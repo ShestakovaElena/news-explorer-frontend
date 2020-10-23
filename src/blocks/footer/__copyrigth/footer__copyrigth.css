@@ -1,0 +1,14 @@
+.footer__copyrigth{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 137%;
+    color: #B6BCBF;
+}
+
+@media all and (max-width: 550px) {
+    .footer__copyrigth{
+        order: 2;
+    }
+}

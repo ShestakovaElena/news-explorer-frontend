@@ -1,0 +1,20 @@
+@import url(../header/__menu/header__menu.css);
+@import url(../header//__logo/header__logo.css);
+
+.header {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.header_with-image{
+    background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media all and (max-width: 550px) {
+    .header_with-image{
+        min-height: 536px;
+    }
+}

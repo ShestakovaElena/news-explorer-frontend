@@ -1,0 +1,12 @@
+@import url(./__input/search__input.css);
+@import url(./__item/search__item.css);
+@import url(./__subtitle/search__subtitle.css);
+@import url(./__title/search__title.css);
+
+
+.search{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 608px;
+}

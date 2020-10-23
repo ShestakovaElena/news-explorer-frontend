@@ -1,0 +1,22 @@
+.search__subtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 133%;
+    color: #FFFFFF;
+    margin-bottom: 64px;
+    max-width: 545px;
+}
+
+@media all and (max-width: 1000px) {
+    .search__subtitle{
+        margin-bottom: 48px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .search__subtitle{
+        margin-bottom: 122px;
+    }
+}

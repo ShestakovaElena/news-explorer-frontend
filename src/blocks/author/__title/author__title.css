@@ -1,0 +1,23 @@
+.author__title{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 115%;
+    color: #1A1B22;
+    margin: 51px 0 24px;
+}
+
+@media all and (max-width: 1000px) {
+    .author__title{
+        margin: 0 0 16px;
+    }
+    
+}
+
+@media all and (max-width: 550px) {
+    .author__title{
+        margin: 24px 0 16px;
+    }
+}
+    

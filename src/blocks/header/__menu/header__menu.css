@@ -1,0 +1,24 @@
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 104px;
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+
+.header__menu_white_mode{
+    box-shadow: inset 0px -1px 0px #D1D2D6;
+}
+
+@media all and (max-width: 1000px) {
+    .header__menu{
+        padding: 0 5.2%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .header__menu{
+        height: 56px;
+    }
+}

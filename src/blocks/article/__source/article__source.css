@@ -1,0 +1,12 @@
+.article__source{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 125%;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    display: inline-block;
+    justify-self: flex-end;
+}

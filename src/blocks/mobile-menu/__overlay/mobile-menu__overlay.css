@@ -1,0 +1,16 @@
+.mobile-menu__overlay{
+    position: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: 0;
+    transition: .5s;
+    overflow: hidden;
+    background: #000000;
+    opacity: 0.5;
+  }

@@ -1,0 +1,16 @@
+.article__tag {
+    position: absolute;
+    min-width: 72px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 24px;
+    left: 24px;  
+}
+.article__tag_disabled{
+    display: none;
+}

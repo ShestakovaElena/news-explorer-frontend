@@ -1,0 +1,34 @@
+.article__bookmark{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+.article__bookmark_disabled{
+    display: none;
+}
+.article__bookmark-image{
+    background-image: url(../../../images/icons/bookmark_normal.svg);
+}
+.article__bookmark-image:hover{
+    background-image: url(../../../images/icons/bookmark_hover.svg);
+}
+.article__bookmark-image:active{
+    background-image: url(../../../images/icons/bookmark_marked.svg);
+}
+.article__trash-image{
+    background-image: url(../../../images/icons/trash.svg);
+}
+.article__trash-image:hover{
+    background-image: url(../../../images/icons/trash_hover.svg);
+}

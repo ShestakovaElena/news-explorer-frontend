@@ -1,0 +1,10 @@
+.article__tag-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0,875rem;
+    line-height: 171%;
+    text-align: center;
+    color: #000000;
+    margin: 8px 15px;
+}

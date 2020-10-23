@@ -1,0 +1,20 @@
+@import url(./__copyrigth/footer__copyrigth.css);
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 104px 26px;
+}
+
+@media all and (max-width: 1000px) {
+    .footer{
+        margin: 24px 40px 18px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .footer{
+        flex-direction: column;
+        margin: 16px 20px 16px;
+    }
+}

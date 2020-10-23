@@ -1,0 +1,20 @@
+.search__item{
+    position: relative;
+    width: 608px;
+    height: 64px;
+}
+
+@media all and (max-width: 1000px) {
+    .search__item{
+        width: 448px;
+        height: 56px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .search__item{
+        position: static;
+        width: 288px;
+        height: 56px;
+    }
+}

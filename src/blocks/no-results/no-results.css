@@ -1,0 +1,10 @@
+@import url(./__image/no-results__image.css);
+@import url(./__text/no-results__text.css);
+@import url(./__title/no-results__title.css);
+
+.no-results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

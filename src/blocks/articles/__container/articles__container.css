@@ -1,0 +1,27 @@
+.articles__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    margin-top: 64px;
+}
+
+@media all and (max-width: 1000px) {
+    .articles__container{
+        grid-gap: 8px;
+        margin-top: 32px;
+        grid-template-columns: repeat(3, 33%);
+    }
+}
+@media all and (max-width: 750px) {
+    .articles__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 550px) {
+    .articles__container{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin-top: 24px;
+    }
+}
