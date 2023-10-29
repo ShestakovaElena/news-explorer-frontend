@@ -20,9 +20,9 @@
   },
   "homepage": "https://shestakovaelena.github.io/news-explorer-frontend/",
   "devDependencies": {
-    "@babel/cli": "~7.8.4",
-    "@babel/core": "~7.9.6",
-    "@babel/preset-env": "~7.9.6",
+    "@babel/cli": "~7.23.0",
+    "@babel/core": "~7.23.0",
+    "@babel/preset-env": "~7.23.0",
     "autoprefixer": "~9.8.0",
     "babel-loader": "~8.1.0",
     "cross-env": "~7.0.2",
