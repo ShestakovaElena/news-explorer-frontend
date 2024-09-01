@@ -45,6 +45,6 @@
   "dependencies": {
     "babel-polyfill": "~6.26.0",
     "core-js": "~3.4.1",
-    "imagemin-pngquant": "~5.0.1"
+    "imagemin-pngquant": "~5.1.0"
   }
 }
