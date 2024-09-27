@@ -10,20 +10,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     background-repeat: no-repeat;
     background-position: center;
-} 
+}
 .article__bookmark_disabled{
     display: none;
 }
 .article__bookmark-image{
     background-image: url(../../../images/icons/bookmark_normal.svg);
 }
-.article__bookmark-image:hover{
+.article__bookmark-image_active{
     background-image: url(../../../images/icons/bookmark_hover.svg);
 }
-.article__bookmark-image:active{
+.article__bookmark-image_saved{
     background-image: url(../../../images/icons/bookmark_marked.svg);
 }
 .article__trash-image{

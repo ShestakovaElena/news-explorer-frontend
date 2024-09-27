@@ -5,12 +5,14 @@
     position: relative;
     box-sizing: border-box;
     padding: 34px 36px 28px;
-    
+    display: flex;
+    flex-direction: column;
+
 }
 @media all and (max-width: 429px) {
     .popup__content{
         width: 100vw;
         padding: 16px;
     }
-    
+
 }

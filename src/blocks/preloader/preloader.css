@@ -2,11 +2,14 @@
 @import url(./__text/preloader__text.css);
 
 .preloader{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
-	overflow: hidden;
+	  overflow: hidden;
     background: #F5F6F7;
+  }
+  .preloader_active{
+    display: flex;
   }

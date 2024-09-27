@@ -5,13 +5,13 @@
 .menu__link:hover{
     border-bottom: 3px solid #FFF;
     color: #FFF;
-    padding-bottom: 25px; 
+    padding-bottom: 25px;
 }
 
 .menu__link:active{
     border-bottom: 3px solid #FFF;
     color: #FFF;
-    padding-bottom: 25px; 
+    padding-bottom: 25px;
 }
 
 .menu__link_white-mode{
@@ -21,7 +21,7 @@
 .menu__link_white-mode:hover{
     border-bottom: 3px solid #1A1B22;
     color: #1A1B22;
-    padding-bottom: 25px; 
+    padding-bottom: 25px;
 }
 .menu__link_footer{
     color: #1A1B22;
@@ -30,6 +30,9 @@
     color: #1A1B22;
 }
 
+.menu__link_articles{
+  display: none;
+}
 @media all and (max-width: 1439px) {
-    
+
 }
